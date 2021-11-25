@@ -17,12 +17,13 @@ body {
   height: 100vh;
   font-family: var(--ff--body);
   width: 375px;
-  padding: 0;
 }
 .container {
+  /* margin: 0 auto; */
+  margin-top: 2em;
   padding: 0 2.8em;
-  padding-bottom: 0;
-  /* margin-top: 2em; */
+  padding-bottom: 2em;
+  width: 80%;
 }
 .hero-image {
   width: 100%;
@@ -41,7 +42,7 @@ header {
 .facebook-icon,
 .twitter-icon,
 .instagram-icon {
-  width: 10%;
+  width: 30px;
   height: auto;
   color: #fff;
   font-weight: 400;
@@ -51,13 +52,14 @@ header {
 
 .content {
   margin-top: 3em;
+  padding-bottom: 2em;
 }
 
 /* Typography */
 h1 {
-  margin-top: 1em;
+  margin-top: 0;
   font-family: var(--ff--headings);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
   color: #fff;
   font-weight: 600;
@@ -69,26 +71,79 @@ p {
   font-weight: 400;
   line-height: 25px;
   opacity: 0.8;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  /* margin-bottom: 2em; */
 }
 
 a {
   font-family: var(--ff--headings);
-  margin: 0 auto;
+  text-align: center;
   background-color: #fff;
-  padding: 0.9em 5.5em;
+  padding: 1em 6em;
   border-radius: 30px;
   font-size: 0.7rem;
   color: var(--clr-violet-primary);
   text-decoration: none;
-  /* opacity: 0.9; */
-}
-
-.btn-section {
-  margin: 2em 3em;
+  margin: 0 0 0 4em;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
+  margin-bottom: 3em;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  body {
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .container {
+    margin-top: 7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .content {
+    width: 90%;
+    height: auto;
+    padding-left: 3em;
+    margin: 0;
+  }
+
+  .facebook-icon,
+  .twitter-icon,
+  .instagram-icon {
+    width: 30px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3em 2em;
+  }
+  .logo {
+    margin-top: 2em;
+    width: 15%;
+    /* padding: 2em; */
+  }
+
+  h1,
+  p {
+    text-align: left;
+    padding: 0.7em 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+    /* margin-bottom: 1em; */
+  }
+  a {
+    /* margin: 4em 0; */
+    padding: 1.3em 5em;
+  }
 }
