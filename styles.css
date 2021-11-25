@@ -1,0 +1,35 @@
+/* Custom Styles */
+
+:root {
+  /*Font Family  */
+  --ff--headings: "Poppins", sans-serif;
+  --ff--body: "Open Sans", sans-serif;
+
+  /* Colors */
+  --clr-violet-primary: hsl(257, 40%, 49%);
+  --clr-softmagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-image: url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--clr-violet-primary);
+  height: 100vh;
+}
+.container {
+  padding: 1em 2.2em;
+  /* margin-top: 2em; */
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+header {
+  margin: 0;
+}
+
+.logo {
+  width: 35%;
+  height: auto;
+  padding: 2em;
+}
