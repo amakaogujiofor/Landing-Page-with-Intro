@@ -15,9 +15,13 @@ body {
   background-repeat: no-repeat;
   background-color: var(--clr-violet-primary);
   height: 100vh;
+  font-family: var(--ff--body);
+  width: 375px;
+  padding: 0;
 }
 .container {
-  padding: 1em 2.2em;
+  padding: 0 2.8em;
+  padding-bottom: 0;
   /* margin-top: 2em; */
 }
 .hero-image {
@@ -32,4 +36,59 @@ header {
   width: 35%;
   height: auto;
   padding: 2em;
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+  width: 10%;
+  height: auto;
+  color: #fff;
+  font-weight: 400;
+  padding-right: 0.8em;
+  margin-top: 2em;
+}
+
+.content {
+  margin-top: 3em;
+}
+
+/* Typography */
+h1 {
+  margin-top: 1em;
+  font-family: var(--ff--headings);
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+p {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+a {
+  font-family: var(--ff--headings);
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0.9em 5.5em;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  color: var(--clr-violet-primary);
+  text-decoration: none;
+  /* opacity: 0.9; */
+}
+
+.btn-section {
+  margin: 2em 3em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
 }
